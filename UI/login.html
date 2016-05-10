@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    
+    <style type="text/css">
+			@import url(//fonts.googleapis.com/css?family=Exo:100,200,400);
+			@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+    </style>
+    <link rel="stylesheet" type="text/css" href="/style/style_login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+    <!--<meta name="google-signin-client_id" content="407701602385-q005efm7k49t4up3mjbeu55p0in6lkon.apps.googleusercontent.com">-->
+
+  </head>
+  <body>
+
+    <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Web<span>Secure</span></div>
+		</div>
+		<br>
+		<div class="login">
+			 <form action="/OP/OP_login.php" method="post">
+		      <input type="text" name="username" placeholder="username, e.g. admin" required></input><br>
+		      <input type="password" name="password" placeholder="password" required></input><br>
+		      <input type="submit" value="Sign in"/></button>
+		      </form>
+		      
+		        
+		      
+		      <span id='status'></span>
+		      <br><br><br>
+		      <a href="/UI/register.html">Sign up now!</a>
+		      <div style="position: absolute;left: 80px;">
+		      <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+		      </div>
+		</div>
+    
+	<script type="text/javascript">
+			 var myParam = location.search.split('register_success=')[1];
+			 if(myParam=='1'){
+			 	$('#status').text("Sign up successfully!");
+			 }
+			 var myParam = location.search.split('error=')[1];
+			 if(myParam=='1'){
+			 	$('#status').text("Invalid login!");
+			 }
+			
+			
+	</script>
+
+    <!--<script type="text/javascript">-->
+		  <!--          function onSignIn(googleUser) {-->
+		  <!--            var profile = googleUser.getBasicProfile();-->
+		              <!--console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.-->
+		  <!--            console.log('Name: ' + profile.getName());-->
+		  <!--            console.log('Image URL: ' + profile.getImageUrl());-->
+		  <!--            console.log('Email: ' + profile.getEmail());-->
+				<!--	  window.location.replace("/UI/success.php?name="+profile.getName()+"&type=google");-->
+		  <!--          }-->
+		            
+		  <!--      </script>-->
+		        
+		        <!--<script>-->
+		        <!--  function signOut() {-->
+		        <!--    var auth2 = gapi.auth2.getAuthInstance();-->
+		        <!--    auth2.signOut().then(function () {-->
+		        <!--      console.log('User signed out.');-->
+		        <!--    });-->
+		        <!--  }-->
+		        <!--</script>-->
+  </body>
+</html>

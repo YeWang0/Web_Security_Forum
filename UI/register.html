@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Login Form</title>
+    
+    
+    <style type="text/css">
+		@import url(//fonts.googleapis.com/css?family=Exo:100,200,400);
+		@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="/style/style_login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+  </head>
+
+  <body>
+     
+    
+ 
+    <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Web<span>Secure</span></div>
+		</div>
+		<br>
+		<div class="login">
+			 <form action="/OP/OP_register.php" method="post">
+		      <input type="text" name="username" placeholder="username, e.g. admin" required></input><br>
+		      <input type="password" name="password" placeholder="password" required></input><br>
+		      <input type="submit" value="Sign up"/></button>
+		      <span id='status'></span>
+		      </form>
+		      
+		      <br><br>
+		      <a href="/UI/login.html">Sign in now!</a>
+		</div>
+    
+		<script type="text/javascript">
+			 var myParam = location.search.split('register_success=')[1];
+			 if(myParam=='0'){
+			 	$('#status').text("Sorry,Username already exist!");
+			 }
+			
+		</script>
+
+    
+  </body>
+</html>

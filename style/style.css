@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: right;
+    color:red;
+}
+#div1 {
+    margin-top: -20px;
+    margin-bottom:-10px;
+    margin-left:-10px;
+    color:floralwhite;
+}
+#div2 {
+    margin-top: 20px;
+    text-align: center;
+    /*border:50px;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    transform: translate(0, -50%);
+    font-family: 'Exo', sans-serif;
+
+}
+body{
+width: auto;
+height: auto;
+background-image: url('/image/background.jpg');
+background-size: cover;
+
+z-index: 0;
+}

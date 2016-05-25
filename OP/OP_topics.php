@@ -35,9 +35,9 @@
       if ($topicname!=null and $describe!=null){
          $statement = $dbhandle->prepare("insert into topics(user_name,name,describe) 
                                            VALUES(:user_name,:topicname,:describe)");
-         $statement->bindParam(":topicname", $topicname);
-         $statement->bindParam(":describe", $describe);
-         $statement->bindParam(":user_name", $user_name);
+         $statement->bindParam(":topicname", $topicname,PDO::PARAM_STR);
+         $statement->bindParam(":describe", $describe,PDO::PARAM_STR);
+         $statement->bindParam(":user_name", $user_name,PDO::PARAM_STR);
          $statement->execute();
          $results = $statement->fetch(PDO::FETCH_ASSOC);
       } 

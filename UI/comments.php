@@ -38,7 +38,7 @@
             $results = $statement->fetchAll(PDO::FETCH_ASSOC);
             foreach($results as $comment){
                 echo '<div class="row row-content">';
-                echo '<pre>'.$comment[content].'</pre>';
+                echo '<pre>'.htmlspecialchars($comment[content], ENT_QUOTES, 'UTF-8').'</pre>';
                 echo '<p style="float:right">By:'.$comment[user_name].'</p><br>';
                 echo '<div class="col-xs-12 col-sm-1 col-sm-push-10">';
                 echo "<button class='btn btn-danger' onclick='delete_comment(this,".$post_id.")' value=".$comment[id].">Delete</button>";

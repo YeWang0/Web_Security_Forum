@@ -9,11 +9,11 @@ Role-Based Access Control Forum(web) May.2016
 Apache
 PHP
 ## Run
-	start apache server
+	start Apache server
 	run /UI/login.html 
 ## Guidance
  
-1. available users
+1.available users
     	username		role		    password
     	evan        		admin			123
 	admin			admin			123
@@ -27,7 +27,7 @@ PHP
 2.how to set user roles
     update users SET role_id='ID' where username='USERNAME';
     
-3. roles id
+3.roles id
     1 admin
     2 author
     3 moderator

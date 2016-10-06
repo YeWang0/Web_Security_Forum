@@ -14,22 +14,22 @@ PHP
 ## Guidance
  
 1.available users
-    	username		role		    password
-    	evan        		admin			123
-	admin			admin			123
-	moderator1		moderator		123
-	moderator2		moderator		123
-	user1			user			123	
-	user2			user			123
-	author1			author			123
-	author2			author			123
+    	username		role		    password<br />
+    	evan        		admin			123<br />
+	admin			admin			123<br />
+	moderator1		moderator		123<br />
+	moderator2		moderator		123<br />
+	user1			user			123<br />	
+	user2			user			123<br />
+	author1			author			123<br />
+	author2			author			123<br />
 
 2.how to set user roles
     update users SET role_id='ID' where username='USERNAME';
     
 3.roles id
-    1 admin
-    2 author
-    3 moderator
-    4 user
+    1 admin<br />
+    2 author<br />
+    3 moderator<br />
+    4 user<br />
     

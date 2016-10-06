@@ -15,7 +15,7 @@ PHP
  
 ### Available users
 	username		role		    password
-	evan        		admin			123
+	evan        	admin			123
 	admin			admin			123
 	moderator1		moderator		123
 	moderator2		moderator		123

@@ -1,5 +1,11 @@
-This is the guidance.
+###Overview
+Role-Based Access Control Forum(web) May.2016
+§ Implemented the authorization management based on RBAC
+§ Designed a super hash with multiple hash functions to secure user password
+§ Integrated OAuth service(Gmail) for sign-up and login
+§ Developed the website with PHP, JavaScript, JQuery, CSS and Bootstrap
 
+###Guidance.
 how to run:
 1. run /UI/login.html directly.
 

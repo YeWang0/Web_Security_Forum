@@ -13,7 +13,7 @@ PHP
 	run /UI/login.html 
 ## Guidance
  
-Available users
+### Available users
     	username		role		    password<br />
     	evan        		admin			123<br />
 	admin			admin			123<br />
@@ -24,10 +24,10 @@ Available users
 	author1			author			123<br />
 	author2			author			123<br />
 
-how to set user roles
+### how to set user roles
     update users SET role_id='ID' where username='USERNAME';
     
-roles id
+### roles id
     1 admin<br />
     2 author<br />
     3 moderator<br />

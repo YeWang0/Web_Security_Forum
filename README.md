@@ -14,15 +14,15 @@ PHP
 ## Guidance
  
 ### Available users
-    	username		role		    password
-    	evan        		admin			123
-	admin			admin			123
-	moderator1		moderator		123
-	moderator2		moderator		123
-	user1			user			123	
-	user2			user			123
-	author1			author			123
-	author2			author			123
+username		role		    password
+evan        		admin			123
+admin			admin			123
+moderator1		moderator		123
+moderator2		moderator		123
+user1			user			123	
+user2			user			123
+author1			author			123
+author2			author			123
 
 ### how to set user roles
     update users SET role_id='ID' where username='USERNAME';
